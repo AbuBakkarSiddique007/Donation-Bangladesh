@@ -8,9 +8,13 @@
 
 
     <!-- Fav-Icon link -->
+    <link rel="shortcut icon" href="assets/favIcon.png" type="image/x-icon">
 
 
     <!-- Google Font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 
 
     <!-- Font awesome  link-->
@@ -35,37 +39,20 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: '#colorCodeHere',
-                        secondary: '#colorCodeHere',
-                        body: '#colorCodeHere',
-
-                        //using style:
-                        //text-className
-
-                        //like:
-                        //text-primary
-                        //bg-secondary
+                        primary: 'hsla(0,0%,7%,1)',
+                        secondary: 'hsla(0,0%,7%,0.7)',
 
 
+                        btn_bg: 'hsla(86,86%,67%,1)',
+                        heading_bg: 'hsla(40,33%,97%,1)',
                     },
+
                     fontFamily: {
-                        Poppins: 'Poppins',
+                        Lexend: ['Lexend', 'sans-serif'],
 
-                        //Poppins: ['Poppins', 'sans-serif'] // Array for proper usage
-
-                        // using style:
-                        //<body class="font-Poppins">
                     },
                     backgroundImage: {
-                        first_image: "url('yourImagePathHere')",
-                        second_image: "url('yourImagePathHere')",
-                        third_image: "url('yourImagePathHere')",
 
-                        //using style:
-                        //bg-className
-
-                        //like:
-                        //bg-first_image
                     }
                 }
             }
@@ -74,14 +61,180 @@
 
 </head>
 
-<body>
+<body class="font-Lexend">
+    <header class="bg-heading_bg sticky top-0 z-50">
+        <nav class="w-11/12 mx-auto border-2 border-red-500 mt-4 ">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <a class="btn btn-ghost text-xl font-semibold rounded-lg bg-btn_bg">Blog</a>
+                </div>
+                <div class="navbar-center">
+                    <ul class="menu menu-horizontal px-1 flex justify-center items-center text-xl font-semibold">
+                        <li><img src="assets/logo.png" alt=""></li>
 
-    <header>
-        <h2 class="bg-orange-400">Hello World!</h2>
+                        <li><a>Donation Bangladesh</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <ul class="menu menu-horizontal px-1 text-xl font-semibold flex justify-center items-center">
+                        <li> <img src="assets/coin.png" alt=""></li>
+
+                        <li id="userCurrentAccountBalance">55000</li>
+                        <li>BDT</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="w-11/12 mx-auto border-2 border-red-500 text-center mt-4 space-x-4 p-2">
+            <button class="btn btn-xs text-xl font-semibold rounded-lg sm:btn-sm md:btn-md lg:btn-lg">Donation</button>
+            <button class="btn btn-xs text-xl font-semibold rounded-lg sm:btn-sm md:btn-md lg:btn-lg">History</button>
+        </div>
 
     </header>
 
     <main>
+
+        <!-- card section started here  -->
+        <!-- Donation section card  -->
+        <div class="w-11/12 mx-auto mt-10">
+
+            <!-- Noakhali  -->
+            <div
+                class="card lg:card-side bg-base-100 shadow-xl grid grid-cols-2 justify-center items-center border-2 border-red-500 p-8 gap-8">
+                <figure class="rounded-xl border-2 border-yellow-400 ">
+                    <img src="assets/noakhali.png" alt="">
+                </figure>
+
+                <div class="card-body border-2 border-emerald-400 space-y-4">
+
+                    <button class="btn max-w-fit">
+                        <ul class="text-xl font-semibold flex justify-center items-center gap-4">
+                            <li> <img src="assets/coin.png" alt=""></li>
+
+                            <li id="current-donation-amount-1">500</li>
+                            <li>BDT</li>
+                        </ul>
+                    </button>
+
+                    <h2 id="noakhali-donation-title" class="card-title text-primary text-xl font-semibold">Donate for
+                        Flood at Noakhali, Bangladesh
+                    </h2>
+                    <p class="text-secondary"> The recent floods in Noakhali have caused significant damage to homes
+                        infrastructure. Your
+                        donation will help provide essential supplies and to those affected by this disaster. Every
+                        contribution, big or small, makes difference. Please join us in supporting the relief efforts
+                        and making a positive impact on the lives of those in need.</p>
+
+                    <div class="border-2 border-green-500 p-2">
+                        <input id="input-donation-amount-noakhali" type="number" placeholder="Write Donation  Amount"
+                            class="input input-bordered w-full" />
+
+                    </div>
+                    <div class="card-actions justify-center">
+                        <button id="btn-donation-noakhali" class="btn btn-primary w-full">Donation Now</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- For Feni : -->
+            <div
+                class="card lg:card-side bg-base-100 shadow-xl grid grid-cols-2 justify-center items-center border-2 border-red-500 p-8 gap-8">
+                <figure class="rounded-xl border-2 border-yellow-400 ">
+                    <img src="assets/feni.png" alt="">
+                </figure>
+
+                <div class="card-body border-2 border-emerald-400 space-y-4">
+
+                    <button class="btn max-w-fit">
+                        <ul class="text-xl font-semibold flex justify-center items-center gap-4">
+                            <li> <img src="assets/coin.png" alt=""></li>
+
+                            <li id="current-donation-amount-2">100</li>
+                            <li>BDT</li>
+                        </ul>
+                    </button>
+
+                    <h2 id="feni-donation-title" class="card-title text-primary text-xl font-semibold">Donate for
+                        Flood Relief in Feni,Bangladesh
+                    </h2>
+                    <p class="text-secondary"> The recent floods in Feni have devastated local communities, leading to
+                        severe disruption and loss. Your generous donation will help provide immediate aid, including
+                        food, clean water, and medical supplies, to those affected by this calamity. Together, we can
+                        offer crucial support and help rebuild lives in the aftermath of this disaster.</p>
+
+                    <div class="border-2 border-green-500 p-2">
+                        <input id="input-donation-amount-feni" type="number" placeholder="Write Donation  Amount"
+                            class="input input-bordered w-full" />
+                    </div>
+                    <div class="card-actions justify-center">
+                        <button id="btn-donation-feni" class="btn btn-primary w-full">Donation Now</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- For Quota Movement  -->
+            <div
+                class="card lg:card-side bg-base-100 shadow-xl grid grid-cols-2 justify-center items-center border-2 border-red-500 p-8 gap-8">
+                <figure class="rounded-xl border-2 border-yellow-400 ">
+                    <img src="assets/quota-protest.png" alt="">
+                </figure>
+
+                <div class="card-body border-2 border-emerald-400 space-y-4">
+
+                    <button class="btn max-w-fit">
+                        <ul class="text-xl font-semibold flex justify-center items-center gap-4">
+                            <li> <img src="assets/coin.png" alt=""></li>
+
+                            <li id="current-donation-amount-3">200</li>
+                            <li>BDT</li>
+                        </ul>
+                    </button>
+
+                    <h2 id="quota-donation-title" class="card-title text-primary text-xl font-semibold">Aid for Injured
+                        in the Quota Movement
+                    </h2>
+                    <p class="text-secondary"> The recent floods in Noakhali have caused significant damage to homes
+                        infrastructure. Your
+                        donation will help provide essential supplies and to those affected by this disaster. Every
+                        contribution, big or small, makes difference. Please join us in supporting the relief efforts
+                        and making a positive impact on the lives of those in need.</p>
+
+                    <div class="border-2 border-green-500 p-2">
+                        <input id="input-donation-amount-quota" type="number" placeholder="Write Donation  Amount"
+                            class="input input-bordered w-full" />
+
+                    </div>
+                    <div class="card-actions justify-center">
+                        <button id="btn-donation-quota" class="btn btn-primary w-full">Donation Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- card section end here  -->
+
+
+        <!-- History section start here  -->
+
+        <div id="history-container" class="w-11/12 mx-auto mt-20 mb-20 space-y-5">
+            <div class="rounded-lg border-2 border-red-500  p-4 space-y-4">
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et a nam facilis nulla eveniet? Quidem est
+                    officia fugit? Quod, dolore!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et a nam facilis nulla eveniet? Quidem est
+                    officia fugit? Quod, dolore!
+                </p>
+
+            </div>
+        </div>
+
+
+        <!-- History section  end here -->
 
     </main>
 
@@ -89,6 +242,9 @@
 
     </footer>
 
+
+    <script src="js/utilities.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
