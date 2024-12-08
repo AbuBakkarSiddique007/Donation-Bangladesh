@@ -60,7 +60,7 @@
 <body class="font-Lexend">
     <header class="bg-heading_bg sticky top-0 z-50">
         <nav class="w-11/12 mx-auto">
-            <div class="navbar bg-base-100">
+            <div class="navbar bg-base-100 flex flex-col lg:flex-row justify-center lg:justify-between">
                 <div class="navbar-start">
                     <a id="btn-show-blog" class="btn btn-ghost text-xl font-semibold rounded-lg bg-btn_bg">Blog</a>
                 </div>
@@ -82,9 +82,9 @@
 
         <div class="w-11/12 mx-auto text-center mt-4 space-x-4 p-2">
             <button id="btn-for-donation"
-                class="btn btn-xs text-xl font-semibold rounded-lg sm:btn-sm md:btn-md lg:btn-lg">Donation</button>
+                class="btn btn-xs text-xl font-semibold rounded-lg btn-lg">Donation</button>
             <button id="btn-for-history"
-                class="btn btn-xs text-xl font-semibold rounded-lg sm:btn-sm md:btn-md lg:btn-lg">History</button>
+                class="btn btn-xs text-xl font-semibold rounded-lg btn-lg">History</button>
         </div>
     </header>
 
@@ -96,7 +96,7 @@
 
             <!-- Noakhali  -->
             <div
-                class="card lg:card-side bg-base-100 shadow-xl grid grid-cols-2 justify-center items-center border-2 border-borderColor bg-cardBg p-8 gap-8">
+                class="card lg:card-side bg-base-100 shadow-xl grid grid-cols-1 lg:grid-cols-2 justify-center items-center border-2 border-borderColor bg-cardBg p-8 gap-8">
                 <figure class="rounded-xl">
                     <img src="assets/noakhali.png" alt="">
                 </figure>
@@ -130,7 +130,7 @@
 
             <!-- For Feni : -->
             <div
-                class="card lg:card-side bg-base-100 shadow-xl grid grid-cols-2 justify-center items-center border-2 border-borderColor bg-cardBg p-8 gap-8">
+                class="card lg:card-side bg-base-100 shadow-xl grid grid-cols-1 lg:grid-cols-2 justify-center items-center border-2 border-borderColor bg-cardBg p-8 gap-8">
                 <figure class="rounded-xl">
                     <img src="assets/feni.png" alt="">
                 </figure>
@@ -165,7 +165,7 @@
 
             <!-- For Quota Movement  -->
             <div
-                class="card lg:card-side bg-base-100 shadow-xl grid grid-cols-2 justify-center items-center border-2 border-borderColor bg-cardBg p-8 gap-8">
+                class="card lg:card-side bg-base-100 shadow-xl grid grid-cols-1 lg:grid-cols-2 justify-center items-center border-2 border-borderColor bg-cardBg p-8 gap-8">
                 <figure class="rounded-xl">
                     <img src="assets/quota-protest.png" alt="">
                 </figure>
@@ -205,12 +205,8 @@
         <!-- History section start here  -->
         <div id="history-container"
             class="hidden w-11/12 mx-auto mt-20 mb-20 space-y-5 border-2 border-gray-500 bg-cardBg p-8 gap-8 rounded-lg">
-
         </div>
-
-
         <!-- History section  end here -->
-
     </main>
 
     <footer class="w-11/12 mx-auto footer footer-center bg-base-300 text-xl p-4 mt-10 mb-10 rounded-lg">
