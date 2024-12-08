@@ -13,7 +13,6 @@ function getTextFieldValueById(id) {
     return textNumber;
 }
 
-
 //Btn color change:
 const BtnForDonation = document.getElementById("btn-for-donation");
 const BtnForHistory = document.getElementById("btn-for-history");

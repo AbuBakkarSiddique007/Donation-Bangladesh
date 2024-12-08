@@ -38,9 +38,22 @@ document.getElementById('btn-donation-noakhali')
         `;
         document.getElementById('history-container').appendChild(div);
 
-        setTimeout(function () {
-            alert("Payment Successful.");
-        }, 10);
+        // alert for successful payment:
+        // setTimeout(function () {
+        //     alert("Payment Successful.");
+        // }, 10);
+
+        //modal for confirmation: 
+        const modal = document.getElementById("confirmation-modal");
+        function openModal() {
+            modal.showModal();
+        }
+        openModal();
+
+        function closeModal() {
+            modal.close();
+        }
+        closeModal;
     });
 
 // For Feni section
@@ -80,9 +93,22 @@ document.getElementById('btn-donation-feni')
         `;
         document.getElementById('history-container').appendChild(div);
 
-        setTimeout(function () {
-            alert("Payment Successful.");
-        }, 10);
+        // alert for successful payment:
+        // setTimeout(function () {
+        //     alert("Payment Successful.");
+        // }, 10);
+
+        //modal for confirmation: 
+        const modal = document.getElementById("confirmation-modal");
+        function openModal() {
+            modal.showModal();
+        }
+        openModal();
+
+        function closeModal() {
+            modal.close();
+        }
+        closeModal;
     });
 
 // For Quota section
@@ -122,9 +148,22 @@ document.getElementById('btn-donation-quota')
         `;
         document.getElementById('history-container').appendChild(div);
 
-        setTimeout(function () {
-            alert("Payment Successful.");
-        }, 10);
+        // alert for successful payment:
+        // setTimeout(function () {
+        //     alert("Payment Successful.");
+        // }, 10);
+
+        //modal for confirmation: 
+        const modal = document.getElementById("confirmation-modal");
+        function openModal() {
+            modal.showModal();
+        }
+        openModal();
+
+        function closeModal() {
+            modal.close();
+        }
+        closeModal;
     });
 
 // btn blog:

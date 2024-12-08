@@ -60,17 +60,18 @@
 <body class="font-Lexend">
     <header class="bg-heading_bg sticky top-0 z-50">
         <nav class="w-11/12 mx-auto">
-            <div class="navbar bg-base-100 flex flex-col lg:flex-row justify-center lg:justify-between">
-                <div class="navbar-start">
+            <div
+                class="navbar bg-base-100 flex flex-col lg:flex-row justify-center lg:justify-between items-center lg:items-center">
+                <div class="navbar-start flex justify-center lg:justify-start">
                     <a id="btn-show-blog" class="btn btn-ghost text-xl font-semibold rounded-lg bg-btn_bg">Blog</a>
                 </div>
-                <div class="navbar-center">
+                <div class="navbar-center flex justify-center items-center">
                     <ul class="menu menu-horizontal px-1 flex justify-center items-center text-xl font-semibold">
                         <li><img src="assets/logo.png" alt=""></li>
                         <li><a>Donation Bangladesh</a></li>
                     </ul>
                 </div>
-                <div class="navbar-end">
+                <div class="navbar-end flex justify-center lg:justify-end items-center">
                     <ul class="menu menu-horizontal px-1 text-xl font-semibold flex justify-center items-center">
                         <li> <img src="assets/coin.png" alt=""></li>
                         <li id="userCurrentAccountBalance">55000</li>
@@ -81,10 +82,8 @@
         </nav>
 
         <div class="w-11/12 mx-auto text-center mt-4 space-x-4 p-2">
-            <button id="btn-for-donation"
-                class="btn btn-xs text-xl font-semibold rounded-lg btn-lg">Donation</button>
-            <button id="btn-for-history"
-                class="btn btn-xs text-xl font-semibold rounded-lg btn-lg">History</button>
+            <button id="btn-for-donation" class="btn btn-xs text-xl font-semibold rounded-lg btn-lg">Donation</button>
+            <button id="btn-for-history" class="btn btn-xs text-xl font-semibold rounded-lg btn-lg">History</button>
         </div>
     </header>
 
@@ -202,6 +201,22 @@
         </div>
         <!-- card section end here  -->
 
+        <!-- Modal section -->
+        <dialog id="confirmation-modal" class="modal">
+            <div class="modal-box text-center">
+                <h3 class="text-4xl font-bold">Congratulation!</h3>
+                <img class=" mx-auto mt-4" src="assets/coin.png" alt>
+                <p class="py-4">You Have Donated For Humankind</p>
+                <h3 class="text-lg font-bold">Payment Successful! ❤️</h3>
+                <div class="modal-action">
+                    <form method="dialog" class="mx-auto">
+                        <button class="btn">Close Confirmation</button>
+                    </form>
+                </div>
+            </div>
+        </dialog>
+
+
         <!-- History section start here  -->
         <div id="history-container"
             class="hidden w-11/12 mx-auto mt-20 mb-20 space-y-5 border-2 border-gray-500 bg-cardBg p-8 gap-8 rounded-lg">
@@ -209,7 +224,7 @@
         <!-- History section  end here -->
     </main>
 
-    <footer class="w-11/12 mx-auto footer footer-center bg-base-300 text-xl p-4 mt-10 mb-10 rounded-lg">
+    <footer class="w-11/12 mx-auto footer footer-center bg-base-300 text-xl p-4 mt-10 mb-0 rounded-lg">
         <aside>
             <p>Copyright © 2024 - All right reserved by Donation Bangladesh Ltd.</p>
         </aside>
