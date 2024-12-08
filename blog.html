@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Bangladesh</title>
+
+
+    <!-- Fav-Icon link -->
+    <link rel="shortcut icon" href="assets/favIcon.png" type="image/x-icon">
+
+
+    <!-- Google Font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+
+    <!-- Font awesome  link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Daisy UI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+    <!-- For Customization -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: 'hsla(0,0%,7%,1)',
+                        secondary: 'hsla(0,0%,7%,0.7)',
+
+
+                        btn_bg: 'hsla(86,86%,67%,1)',
+                        heading_bg: 'hsla(40,33%,97%,1)',
+                    },
+
+                    fontFamily: {
+                        Lexend: ['Lexend', 'sans-serif'],
+
+                    },
+                    backgroundImage: {
+
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <header class="bg-heading_bg sticky top-0 z-50">
+        <nav class="w-11/12 mx-auto border-2 border-red-500 mt-4 ">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <a id="btn-show-home" class="btn btn-ghost text-xl font-semibold rounded-lg bg-btn_bg">Home</a>
+                </div>
+                <div class="navbar-center">
+                    <ul class="menu menu-horizontal px-1 flex justify-center items-center text-xl font-semibold">
+                        <li><img src="assets/logo.png" alt=""></li>
+
+                        <li><a>Donation Bangladesh</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <ul class="menu menu-horizontal px-1 text-xl font-semibold flex justify-center items-center">
+                        <li> <img src="assets/coin.png" alt=""></li>
+
+                        <li id="userCurrentAccountBalance">55000</li>
+                        <li>BDT</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- two btn  -->
+        <!-- <div class="w-11/12 mx-auto border-2 border-red-500 text-center mt-4 space-x-4 p-2">
+            <button id="btn-for-donation"
+                class="btn btn-xs text-xl font-semibold rounded-lg sm:btn-sm md:btn-md lg:btn-lg  ">Donation</button>
+            <button id="btn-for-history"
+                class="btn btn-xs text-xl font-semibold rounded-lg sm:btn-sm md:btn-md lg:btn-lg">History</button>
+        </div> -->
+
+    </header>
+
+    <main>
+        <div class="w-11/12 mx-auto mt-4 mb-4 border-2 border-red-400 space-y-4">
+            <div class="max-w-2xl text-start flex justify-start items-center gap-3  border-2 border-green-400">
+                <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
+                    Important FAQ
+                </h2>
+                <p class="">
+                    <i class="fa-solid fa-person-circle-question text-3xl"></i>
+                </p>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+                <div class="collapse-content">
+                    <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the
+                        structure of a web page as a hierarchical tree of objects, allowing developers to access,
+                        manipulate, and update the content, structure, and styles of a page dynamically using languages
+                        like JavaScript.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+
+
+                <div class="collapse-content">
+                    <ol class="space-y-4">
+                        <li>
+                            <p class="font-semibold">To select an element from the DOM:</p>
+                        </li>
+                        <li>document.getElementById('id') for an element with a specific ID.</li>
+                        <li>document.querySelector('selector') for the first matching CSS selector.</li>
+                        <li>document.querySelectorAll('selector') for all matching CSS selectors.</li>
+                        <li>document.getElementsByClassName('className') for elements with a specific class.</li>
+                        <li>document.getElementsByTagName('tagName') for elements with a specific tag.</li>
+                    </ol>
+                </div>
+
+
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and
+                    why is it useful?</div>
+                <div class="collapse-content">
+                    <p>Event delegation is a technique in the DOM where a single event listener is added to a parent
+                        element to handle events on its child elements. It works by leveraging event bubbling, where
+                        events propagate from child to parent.
+                    <ul>
+                        <li>
+                            <h5 class="font-semibold mt-4">
+                                Why it's useful:
+                            </h5>
+                        </li>
+                        <li>Reduces the number of event listeners, improving performance.</li>
+                        <li>Dynamically handles events for elements added or removed after the listener is set.</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+
+
+            
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles
+                    using the DOM?</div>
+                <div class="collapse-content">
+                    <h5 class="font-semibold">
+                        To manipulate an element's attributes and styles in the DOM:
+                    </h5>
+                    <ul class="space-y-4">
+                        <li>
+                            <p class="font-semibold">Attributes:</p> Use methods like setAttribute(), getAttribute(), or
+                            removeAttribute().
+                        </li>
+                        <li>
+                            <p class="font-semibold">Styles:</p> Modify the style property. Example:
+                            element.style.color = 'red';
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </main>
+
+    <script src="js/index.js"></script>
+    <script src="js/blog.js"></script>
+
+</body>
+
+</html>

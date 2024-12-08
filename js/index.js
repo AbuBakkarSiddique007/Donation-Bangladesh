@@ -144,3 +144,14 @@ document.getElementById('btn-donation-quota')
         document.getElementById('history-container').appendChild(div);
         alert("Payment Successful.");
     });
+
+
+//btn blog:
+
+document.getElementById('btn-show-blog')
+    .addEventListener('click', function () {
+        // window.location.href = '.';
+        window.location.href = 'blog.html'
+
+        
+    })
