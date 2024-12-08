@@ -19,21 +19,18 @@ const BtnForDonation = document.getElementById("btn-for-donation");
 const BtnForHistory = document.getElementById("btn-for-history");
 
 //default:
-BtnForDonation.classList.add("bg-red-600");
-
+BtnForDonation.classList.add("bg-btn_bg");
 
 BtnForDonation.addEventListener("click", function () {
-  
-    BtnForDonation.classList.add("bg-red-600");
-    BtnForHistory.classList.remove("bg-red-600");
+    BtnForDonation.classList.add("bg-btn_bg");
+    BtnForHistory.classList.remove("bg-btn_bg");
 });
 
 
 BtnForHistory.addEventListener("click", function () {
-    BtnForHistory.classList.add("bg-red-600");
-    BtnForDonation.classList.remove("bg-red-600");
+    BtnForHistory.classList.add("bg-btn_bg");
+    BtnForDonation.classList.remove("bg-btn_bg");
 });
-
 
 
 function showSectionById(id) {

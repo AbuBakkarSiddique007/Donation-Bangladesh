@@ -1,4 +1,4 @@
-console.log('Blog js file is connected!');
+// console.log('Blog js file is connected!');
 
 document.getElementById('btn-show-home')
     .addEventListener('click', function () {
